@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/all.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -17,23 +17,25 @@
     }
 
     body {
-      font-family:"Poppins", sans-serif ;
+      margin-inline: 10vw;
+      font-family:"Poppins", sans-serif;
       overflow-x: hidden;
     }
 
+  
     .navbar {
       background-color: #ffffff;
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 16px 100px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
       z-index: 100;
     }
 
     .logo {
+      margin-left: -96px;
       display: flex;
       flex-direction: column;
       font-weight: bold;
@@ -57,7 +59,7 @@
     .nav-links a {
       text-decoration: none;
       color: #000;
-      font-size: 16px;
+      font-size: 14px;
       transition: color 0.3s ease;
     }
 
@@ -74,50 +76,58 @@
       font-size: 14px;
       transition: background-color 0.3s ease;
     }
-    .btn-cv:hover{
+    .btn-cv:hover {
       background-color:#444;
       cursor: pointer;
     }
 
-
-
+  
     .hero-section {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 100%;
-       margin: 0 auto;
-       max-width: 1200px;
-      
+      margin-top: 40px;
+      max-width: 1200px;
     }
+
     .hero-left {
       flex: 1;
       padding-right: 40px;
       width: 500px;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    .hero-left div {
+      margin-right: 40px;
     }
 
     .hero-left h4 {
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 10px;
-      margin-top: 20px;
+      margin-right: 20px;
     }
 
     .hero-left h4 span {
       color: orange;
-      font-weight:bold ;
-      width: 210;
+      font-weight:bold;
+      width: 210px;
       height: 248px;
       font-weight: 600;
       font-size: 32px;
       line-height: 100%;
+      margin-right: 42px;
     }
+
     .hero-left h1 {
-      font-size: 56px;
+      font-size: 40px;
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 20px;
       font-weight: bold;
+      margin-right: 20px;
     }
 
     .hero-left p {
@@ -125,7 +135,6 @@
       line-height: 1.6;
       margin-bottom: 20px;
       color: #444;
-    
     }
 
     .hero-left .btn-hire {
@@ -151,33 +160,6 @@
     }
 
     
-    @media (max-width: 768px) {
-      .hero-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 50px 20px;
-      }
-
-      .hero-left, .hero-right {
-        padding: 0;
-      }
-
-      .hero-left h1 {
-        font-size: 40px;
-      }
-
-      .profile-img {
-        margin-top: 20px
-      
-      
-      }
-    }
-    img{
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-    
     .about-section {
       display: flex;
       justify-content: space-between;
@@ -188,21 +170,21 @@
       width: 100%;
       height: auto;
     }
-    .about-right{
-    font-size: 16px;
-    text-align: start;
-  
 
-  }
-  .about-right h2{
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #000;
-    text-align: center;
+    .about-right {
+      font-size: 20px;
+      text-align: center;
+    }
 
-  }
-  .about-left {
+    .about-right h2 {
+      margin-bottom: 20px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+    }
+
+    .about-left {
       flex: 1;
       display: flex;
       justify-content: center;
@@ -210,46 +192,600 @@
       flex-direction: column;
       float: left;
     }
-    .Services-section{
-      padding: 60px 100px;
-      text-align: center;
-    }
-    .Services-section h1{
-      font-size: 36px;
-      font-weight: bold;
-      font-family:  'poppins';
-    }
-.social-icons {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.social-icons i {
-  font-size: 24px;
-  color: #444;
-  transition: color 0.3s, transform 0.3s;
-  cursor: pointer;
-}
-
-.social-icons i:hover {
-  color: orange;
-}
 
     
+    .Services-section {
+      padding: 68px 20px;
+      background-color: #fff;
+      text-align: center;
+      margin-right: 20px;
+      padding: 80px 20px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .service-card {
+      background: #f8f8f8;
+      border-radius: 16px;
+      padding: 30px 20px;
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .Services-section h1 {
+      font-size: 30px;
+      font-weight: 600;
+      font-family:  'poppins';
+      text-align: center;
+    }
+
+    
+    .btn-all {
+      background-color: #f8f8f8;
+      color: black;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+      margin-right: 20px;
+      text-align: center;
+    }
+
+    .btn-all:hover {
+      background-color: #fd6f00;
+    }
+
+    .btn-ui {
+      background-color: #f8f8f8;
+      color: black;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+      gap: 40px;
+      text-align: center;
+    }
+
+    .btn-ui:hover {
+      background-color: #fd6f00;
+    }
+
+    .btn-web {
+      background-color: white;
+      color:black;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    .btn-web:hover {
+      background-color: #fd6f00;
+    }
+
+    .btn-app {
+      background-color: #f8f8f8;
+      color: black;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    .btn-app:hover {
+      background-color: #fd6f00;
+    }
+
+    .btn-graphic {
+      background-color: #f8f8f8;
+      color: black;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+      margin-left: 20px;
+      text-align: center;
+    }
+
+    .btn-graphic:hover {
+      background-color: orange;
+    }
+
+    
+    .social-icons {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .social-icons i {
+      font-size: 24px;
+      color: #444;
+      transition: color 0.3s, transform 0.3s;
+      cursor: pointer;
+    }
+
+    .social-icons i:hover {
+      color: orange;
+    }
+
+  
+    .services-heading h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .services-heading p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+  
+    .h1-project {
+      font-size: 25px;
+      text-align: center;
+      font-weight: 700px;
+    }
+
+    .h1-project p {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .project-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+      justify-content: center;
+    }
+
+    .project-card {
+      background: #f8f8f8f8;
+      padding: 16px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s;
+      width: 300px;
+      height: 350px;
+      margin-bottom: 20px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .project-card p {
+      font-size: 14px;
+      color: orangered;
+      margin-top: 10px;
+    }
+
+    .project-card h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 8px;
+      color: #333;
+    }
+
+    
+    .testimonials-section {
+      padding: 80px 20px;
+      background-color: #fffefc;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .testimonials-heading h1 {
+      font-size: 32px;
+      margin-top: 25px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .testimonials-heading p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 50px;
+    }
+
+    .testimonials-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .testimonial-card {
+      width: 300px;
+      background: #f9f9f9;
+      border-radius: 16px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .testimonial-card:hover {
+      transform: scale(1.05);
+    }
+
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-card h4 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 4px;
+    }
+
+    .testimonial-card .position {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-card p {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+  
+    .design-Section {
+      text-align: center;
+      background-color: white;
+      padding: 40px 20px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .design-Section h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #000;
+    }
+
+    .design-Section p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .contact-form input[type="email"] {
+      width: 350px;
+      padding: 12px 16px;
+      border: 1px solid black;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: orange;
+      color: white;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+  
+    .footer {
+      background-color: #f8f8f8f8;
+      color: black;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+      gap: 40px;
+    }
+
+    .footer-logo h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      color: #555;
+      text-align: center;
+    }
+
+    .footer-logo p {
+      font-size: 14px;
+      color: #ccc;
+      text-align: center;
+    }
+
+    .footer-links h3,
+    .footer-social h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer-links ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-links ul li a {
+      color: black;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-links ul li a:hover {
+      color: orange;
+    }
+
+    .social-icons a:hover {
+      color: orange;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      background-color: white;  
+    }
+
+    
+    @media (max-width: 1200px) {
+      body {
+        margin-inline: 5vw;
+      }
+      
+      .navbar {
+        padding: 16px 50px;
+      }
+      
+      .logo {
+        margin-left: -50px;
+      }
+    }
+
+    
+    @media (max-width: 992px) {
+      .hero-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .hero-left {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      
+      .hero-left div {
+        margin-right: 0;
+      }
+      
+      .about-section {
+        flex-direction: column;
+      }
+      
+      .about-left {
+        margin-bottom: 40px;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .footer-links ul {
+        justify-content: center;
+      }
+    }
+
+  
+    @media (max-width: 768px) {
+      body {
+        margin-inline: 5vw;
+      }
+      
+      .navbar {
+        padding: 16px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .logo {
+        margin-left: 0;
+        margin-bottom: 15px;
+      }
+      
+      .nav-links {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+      }
+      
+      .hero-left h1 {
+        font-size: 32px;
+      }
+      
+      .hero-left p {
+        font-size: 16px;
+      }
+      
+      .services-heading h2 {
+        font-size: 28px;
+      }
+      
+      .testimonials-heading h1 {
+        font-size: 28px;
+      }
+      
+      .design-Section {
+        width: 90%;
+      }
+      
+      .contact-form input[type="email"] {
+        width: 100%;
+      }
+    }
+
+  
+    @media (max-width: 576px) {
+      body {
+        margin-inline: 3vw;
+      }
+      
+      .hero-left h1 {
+        font-size: 28px;
+      }
+      
+      .hero-left h4 span {
+        font-size: 24px;
+      }
+      
+      .about-right img {
+        width: 100%;
+      }
+      
+      .project-card {
+        width: 100%;
+      }
+      
+      .button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+      }
+      
+      .btn-all, .btn-ui, .btn-web, .btn-app, .btn-graphic {
+        margin: 5px;
+        padding: 8px 12px;
+      }
+    }
+
+  
+    @media (max-width: 480px) {
+      .hero-left h1 {
+        font-size: 24px;
+      }
+      
+      .hero-left h4 {
+        font-size: 16px;
+      }
+      
+      .hero-left h4 span {
+        font-size: 20px;
+      }
+      
+      .hero-left p {
+        font-size: 14px;
+      }
+      
+      .design-Section h1 {
+        font-size: 28px;
+      }
+      
+      .design-Section p {
+        font-size: 16px;
+      }
+      
+      .footer-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .social-icons {
+        gap: 15px;
+      }
+    }
   </style>
 </head>
 <body>
-
+  
   <nav class="navbar">
     <div class="logo">
-      Mansoor Dev
-      <span>Mansoor Dev </span>
+       <h1>Mansoor Dev</h1>
     </div>
     <div class="nav-links">
       <a href="#">Home</a>
-      <a href="#">About Me</a>
+      <a href="#">About</a>
       <a href="#">Services</a>
       <a href="#">Projects</a>
       <a href="#">Testimonials</a>
@@ -269,37 +805,143 @@
       <button class="btn-hire">Hire Me</button>
     </div>
 
-    <div class="hero-right" >
+    <div class="hero-right">
       <div class="profile-img">
         <img src="Images/Group 2.png" alt="Profile Image" width="250px">
         <div class="social-icons">
-  <i class="fa-brands fa-facebook"></i>
-  <i class="fa-brands fa-twitter"></i>
-  <i class="fa-brands fa-instagram"></i>
-  <i class="fa-brands fa-linkedin"></i>
-</div>
-
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
     </div>
   </section>
-<section class="about-section">
+  
+  <section class="about-section">
     <div class="about-left">
-      <img src="Images/Group 7.png" alt="person" width="300px" >
+      <img src="Images/Group 7.png" alt="person" width="400px">
     </div>
 
     <div class="about-right">
-  <h2>About Me</h2>
-  <p> Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. </p>
-  <img src="Images/Group 10.png" alt="progress " width="600px">
-
-</div>
-</section>
-  <section class="Services-section">
-  <div class="Services-container">
-    <h1> Services</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi et recusandae, magni delectus perferendis! Cumque alias placeat voluptatum deserunt, maxime, ducimus, excepturi atque temporibus obcaecati omnis in unde voluptates.</p>
-
+      <h2>About Me</h2>
+      <p> Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. </p>
+      <img src="Images/Group 10.png" alt="progress " width="600px">
+    </div>
+  </section>
+  
+  <div class="Services-section">
+    <div class="services-heading">
+      <h2>My Services</h2>
+      <p>I offer a wide range of services to bring your digital ideas to life — from designing user interfaces to developing engaging web and mobile apps.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="icon"><img src="Images/Vector 1.png" alt="Vector"></div>
+        <h3>UI/UX</h3>
+        <p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"><img src="Images/vector 2.png" alt="vector"></div>
+        <h3>Web Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+      </div>
+      <div class="service-card">
+        <div class="icon"> <img src="Images/vector 3.png" alt="vector"></div>
+        <h3>App Design</h3>
+        <p>Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum</p>
+      </div>
+    </div>
   </div>
+  
+  <section class="Projects">
+    <div class="h1-project">
+      <h1> My projects</h1>
+      <p>Explore my portfolio of creative work across different design disciplines.</p>
+      <div class="button">
+        <button class="btn-all"> All</button>
+        <button class="btn-ui"> UI/UX</button>
+        <button class="btn-web"> Web Design </button>
+        <button class="btn-app"> App Design </button>
+        <button class="btn-graphic"> Graphic Design </button>
+      </div>
+    </div>
+    <div class="project-gallery">
+      <div class="project-card">
+        <img src="Images/Air calling Landing page Design.png" alt="Air Calling" />
+        <p>Web Design</p>
+        <h4>Air Calling Landing Page</h4>
+      </div>
+      <div class="project-card">
+        <img src="Images/Web Designs.png" alt="Project 2" />
+        <p>Web Design</p>
+        <h4>Bussiness Landing Page Design</h4>
+      </div>
+      <div class="project-card">
+        <img src="Images/E Com Design.png" alt="Project 3" />
+        <p>Graphic Design</p>
+        <h4>ECom Web page Design</h4>
+      </div>
+    </div>
+  </section>
+  
+  <section class="testimonials-section">
+    <div class="testimonials-heading">
+      <h1>Testimonials</h1>
+      <p>Real feedback from people I've worked with.</p>
+    </div>
+    <div class="testimonials-container">
+      <div class="testimonial-card">
+        <img src="Images/Ellipse 10.png" alt="Client 1">
+        <h4>John Doe</h4>
+        <p>CEO</p>
+        <p>"Fawzi is a top-tier designer! He understood our vision perfectly and delivered beyond expectations."</p>
+      </div>
+    </div>
+  </section>
+  
+  <div class="design-Section">
+    <h1> Lets Design Together</h1>
+    <p>Contact US</p>
+    <form class="contact-form">
+      <label for="email"></label>
+      <input type="email" id="email" placeholder="Enter Your Email">
+      <input type="submit" value="Contact Me">
+    </form>
+  </div>
+  
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>Mansoor Dev</h2>
+        <p>Designing experiences that matter.</p>
+      </div>
 
-</section>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Testimonials">Testimonials</a></li>
+          <li><a href="Contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Follow Me</h3>
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mansoor Dev. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
